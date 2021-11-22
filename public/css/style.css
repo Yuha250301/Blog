@@ -1,0 +1,23 @@
+h1 {
+    margin-top: 3vh;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    font-size: 12px;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
