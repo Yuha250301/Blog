@@ -13,10 +13,10 @@
     neque egestas congue quisque egestas. Dui vivamus arcu felis bibendum. Leo vel fringilla est ullamcorper eget nulla
     facilisi etiam.</p>
 
-<% for (let index = 0; index < listPost.length; index++) { %>
-    <h2><%= listPost[index].title %></h2>
-    <p><%= listPost[index].content.substr(0,100) %>...<a href="/posts/<%=listPost[index].title%>">Read More</a></p>
-<% } %>
+<% listPost.forEach((post) => { %>
+    <h2><%= post.title %> </h2>
+    <p><%= post.content.substr(0,100) %>...<a href="/posts/<%=post._id%>">Read more</a></p>
+<% }) %> 
 
 
 <%- include('partials/footer') %>
